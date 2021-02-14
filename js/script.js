@@ -1,3 +1,5 @@
+/*AUTOMATIC SLIDESHOW*/
+
 /* Find all slideshow containers */
 var slideshowContainers = document.getElementsByClassName("slideshow-container");
 /* For each container get starting variables */
@@ -29,6 +31,8 @@ function showSlides(slides, slideIndex, cycle) {
     }, cycle);
 }
 
+/*BACK TO TOP BUTTON*/
+
 //Get the button:
 mybutton = document.getElementById("myBtn");
 
@@ -38,6 +42,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
+
   } else {
     mybutton.style.display = "none";
   }
